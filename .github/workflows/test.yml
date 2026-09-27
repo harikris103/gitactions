@@ -26,3 +26,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest
+
+    # Step 4: Run tests
+    - name: Run calculator tests
+      run: python -m unittest test_calculator.py -v
+    
+    # Step 5: Run calculator app
+    - name: Run calculator
+      run: python calculator.py     
