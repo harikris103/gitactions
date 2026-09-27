@@ -1,4 +1,4 @@
-git hub action calculator app
+#git hub action calculator app
 name: Calculator App Tests
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    rums-on: ubuntu-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ['3.8', '3.9', '3.10']
